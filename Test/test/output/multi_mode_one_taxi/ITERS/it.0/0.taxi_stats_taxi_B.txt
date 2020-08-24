@@ -1,0 +1,28 @@
+Passenger Wait Time [s]
+hour	n	avg	sd		min	2%ile	5%ile	25%ile	50%ile	75%ile	95%ile	98%ile	max
+0	3	142.7	72.1		79	79	79	79	128	221	221	221	221
+1	0	NaN	NaN		NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+2	0	NaN	NaN		NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+daily	3	142.7	72.1		79	79	79	79	128	221	221	221	221
+
+Vehicle Empty Drive Ratio
+hour	fleetAvg	avg	sd		min	2%ile	5%ile	25%ile	50%ile	75%ile	95%ile	98%ile	max
+0	0.4797	0.4797	0.0000		0.480	0.480	0.480	0.480	0.480	0.480	0.480	0.480	0.480
+1	NaN	NaN	NaN		NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+2	NaN	NaN	NaN		NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+daily	0.4797	0.4797	0.0000		0.480	0.480	0.480	0.480	0.480	0.480	0.480	0.480	0.480
+
+Vehicle Wait Ratio
+hour	fleetAvg	avg	sd		min	2%ile	5%ile	25%ile	50%ile	75%ile	95%ile	98%ile	max
+0	0.6039	0.6039	0.0000		0.604	0.604	0.604	0.604	0.604	0.604	0.604	0.604	0.604
+1	1.0000	1.0000	0.0000		1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000
+2	1.0000	1.0000	0.0000		1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000	1.000
+daily	0.8218	0.8218	0.0000		0.822	0.822	0.822	0.822	0.822	0.822	0.822	0.822	0.822
+
+Total duration of tasks by type [h]
+hour	EMPTY_DRIVE	PICKUP	OCCUPIED_DRIVE	DROPOFF	STAY	all
+0	0.12	0.10	0.13	0.05	0.60	1.00
+1	0.00	0.00	0.00	0.00	1.00	1.00
+2	0.00	0.00	0.00	0.00	0.22	0.22
+daily	0.12	0.10	0.13	0.05	1.83	2.22
+

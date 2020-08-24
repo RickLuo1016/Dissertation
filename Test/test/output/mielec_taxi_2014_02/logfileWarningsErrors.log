@@ -1,0 +1,1 @@
+2020-08-14 15:48:10,057  WARN PreProcessEuclidean:59 There are links with stored length smaller than their Euclidean distance in this network. Thus, A* cannot guarantee to calculate the least-cost paths between two nodes.

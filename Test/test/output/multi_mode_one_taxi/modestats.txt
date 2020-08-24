@@ -1,0 +1,2 @@
+Iteration	bike	car	other	pt	ride	taxi_A	taxi_B	taxi_C	walk
+0	0.0	0.0	0.0	0.0	0.0	0.4	0.3	0.3	0.0

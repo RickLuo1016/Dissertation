@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<!DOCTYPE config SYSTEM "http://www.matsim.org/files/dtd/config_v2.dtd">
+<config>
+
+	<module name="dvrp">
+
+	</module>
+
+	<module name="network">
+		<param name="inputNetworkFile" value="network.xml.gz" />
+	</module>
+
+	<module name="plans">
+		<param name="inputPlansFile" value="plans.xml.gz" />
+	</module>
+
+	<module name="qsim">
+		<param name="simStarttimeInterpretation" value="onlyUseStarttime" />
+		<param name="endTime" value="24:00:00"/>
+		<param name="insertingWaitingVehiclesBeforeDrivingVehicles" value="true" />
+		<param name="snapshotStyle" value="queue" />
+	</module>
+	
+	<module name="otfvis">
+		<param name="coloringScheme" value="taxicab" />
+		<param name="drawNonMovingItems" value="true" />
+		<param name="linkWidth" value="30" />
+	</module>
+
+	<module name="controler">
+		<param name="outputDirectory" value="output/test" />
+		<param name="overwriteFiles" value="deleteDirectoryIfExists" />
+		<param name="firstIteration" value="0" />
+		<param name="lastIteration" value="1" />
+	</module>
+
+	<module name="planCalcScore">
+		<parameterset type="activityParams" >
+				<param name="activityType" value="work" />
+				<param name="closingTime" value="undefined" />
+				<param name="earliestEndTime" value="undefined" />
+				<param name="latestStartTime" value="undefined" />
+				<param name="minimalDuration" value="undefined" />
+				<param name="openingTime" value="undefined" />
+				<param name="priority" value="1.0" />
+				<param name="scoringThisActivityAtAll" value="true" />
+				<param name="typicalDuration" value="08:00:00" />
+				<param name="typicalDurationScoreComputation" value="relative" />
+		</parameterset>
+
+		<parameterset type="activityParams" >
+				<param name="activityType" value="home" />
+				<param name="closingTime" value="undefined" />
+				<param name="earliestEndTime" value="undefined" />
+				<param name="latestStartTime" value="undefined" />
+				<param name="minimalDuration" value="undefined" />
+				<param name="openingTime" value="undefined" />
+				<param name="priority" value="1.0" />
+				<param name="scoringThisActivityAtAll" value="true" />
+				<param name="typicalDuration" value="08:00:00" />
+				<param name="typicalDurationScoreComputation" value="relative" />
+		</parameterset>
+		
+	</module>
+
+	<module name="strategy">
+		<!-- Either we have only DynAgents, or we want "standard" agents to serve as a background,
+		i.e. not to change their behavior -->
+		<param name="maxAgentPlanMemorySize" value="1" />
+		<param name="ModuleProbability_1" value="1.0" />
+		<param name="Module_1" value="KeepLastSelected" />
+	</module>
+</config>

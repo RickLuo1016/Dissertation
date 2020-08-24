@@ -1,0 +1,2 @@
+Iteration	bike	car	other	pt	ride	taxi	walk
+0	0.0	0.9695072196402597	0.0	0.0	0.0	0.030492780359740304	0.0
